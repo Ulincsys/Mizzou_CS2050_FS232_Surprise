@@ -28,3 +28,12 @@ LD_LIBRARY_PATH=libs:$LD_LIBRARY_PATH ./a.out
 ```
 
 The `LD_LIBRARY_PATH` variable tells the shared object loader where to find library files on startup. By default, programs will look in your system library folders (IE: `/usr/lib` on Linux) first, and then wherever you tell them to after.
+
+## Running in Python
+
+Compile the shared library file first, and then launch `main.py` with Python:
+
+```
+make library
+python3 main.py
+```
