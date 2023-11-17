@@ -15,6 +15,8 @@ my_library.print_hello.restype = None
 my_library.print_hello("Hi from Python!".encode())
 # Note the `.encode()` at the end of the above string argument
 
-super_pi = my_library.very_expensive_function(10)
+iterations = input("Enter a number: ")
+
+super_pi = my_library.very_expensive_function(int(iterations))
 
 print(f"Result from super expensive function: {super_pi}")
