@@ -9,4 +9,4 @@ main-shared: library
 	gcc -Wall -Werror -Wpedantic --std=c11 -L libs/ main.c -lmylib
 
 main-dynamic: library
-	gcc -Wall -Werror --std=c11 dyn_main.c
+	gcc -Wall -Werror --std=c11 dyn_main.c -ldl
